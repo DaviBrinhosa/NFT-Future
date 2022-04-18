@@ -9,73 +9,74 @@
 
 .banner__title {
     color: #fdfdfd;
-    position: absolute;
+    display: block;
     left: 50%;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-    top: 85%;
+    margin: 0 auto;
+    position: absolute;
     text-align: center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
     text-transform: uppercase;
     transform: translate(-50%, -50%);
     width: 100%;
-    display: block;
-    font-size: 7.5em ;
-    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 19%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 9s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #ffffff;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+    stroke: #ffffff;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+    stroke: #ffffff;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+    stroke: #ffffff;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+    stroke: #ffffff;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -50%;}
 }
 
 @media screen and (min-width: 0) {
     .banner__picture {
-        height: calc(100vh - 51px);
+        height: calc(70vh - 75px);
     }
 
     .banner__title {
         font-size: 3rem;
+        top: 65%;
+        overflow-wrap: break-word;
     }
 }
 @media screen and (min-width: 768px) {
     .banner__picture {
-        height: calc(100vh - 72px);
+        height: calc(100vh - 137px);
     }
 
     .banner__title {
         font-size: 5.0625rem;
-    }
-
-    .text-copy {
-        fill: none;
-        stroke: white;
-        stroke-dasharray: 6% 19%;
-        stroke-width: 5px;
-        stroke-dashoffset: 0%;
-        animation: stroke-offset 9s infinite linear;
-    }
-    
-    .text-copy:nth-child(1){
-        stroke: #ffffff;
-        animation-delay: -1;
-    }
-    
-    .text-copy:nth-child(2){
-        stroke: #ffffff;
-        animation-delay: -2s;
-    }
-    
-    .text-copy:nth-child(3){
-        stroke: #ffffff;
-        animation-delay: -3s;
-    }
-    
-    .text-copy:nth-child(4){
-        stroke: #ffffff;
-        animation-delay: -4s;
-    }
-    
-    .text-copy:nth-child(5){
-        stroke: #ffffff;
-        animation-delay: -5s;
-    }
-    
-    @keyframes stroke-offset{
-        100% {stroke-dashoffset: -50%;}
+        top: 85%;
     }
 }
 

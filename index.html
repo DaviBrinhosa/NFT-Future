@@ -22,19 +22,29 @@
         <link href="./assets/css/footer.css" rel="stylesheet" />
     </head>
     <body>
-        <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
-        <div class="coin__banner" id="coinmarketcap-widget-marquee" coins="1,1027,1839,4687,6783,3311,19515,12252,16197" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
+        <!-- ads --><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div class="coin__banner" id="coinmarketcap-widget-marquee" coins="1,1027,1839,4687,3311,6783,19515,16197" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
         <header class="header">
-            <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
-            <input type="text" class="header__search undefined__search" placeholder="Search">
+            
+            <div id="logo">
+                <a href="/index.html">            
+                <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
+            </div>
+
+            <!-- WEB Menu-->
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link menu__link--active" href="#">Home</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">News</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">About Crypto</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">About NFT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About Crypto & NFT</a></li>
                 </ul>
+                <input type="text" class="menu__search undefined__search" placeholder="Search">
             </nav>
+
+            <!-- Mobile Menu -->
+            <div class="menu__mobile">
+                <a class="menu__mobile___link" href="#">Menu</a>
+            </div>
+
         </header>
         <main class="container">
             <section class="banner">

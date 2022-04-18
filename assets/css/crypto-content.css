@@ -47,16 +47,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 50px;
+    padding: 5vh;
 }
 
 .post {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
-    margin: 10px auto;
-    width: 300px;
+    height: 35vh;
+    margin: 1vh 5vh;
+    width: 35vh;
     position: relative;
 }
 
