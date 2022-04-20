@@ -1,5 +1,5 @@
 .footer {
-    background: #bfbfbf;
+    background: #0d0f45;
     color: #fdfdfd;
     text-align: right;
     padding: 1.5625rem 5rem;
@@ -25,7 +25,7 @@
 
 .footer__form_legend {
 	text-transform: uppercase;
-	color: black;
+	color: white;
 }
 
 .footer__form_fieldset {

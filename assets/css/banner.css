@@ -58,26 +58,60 @@
     100% {stroke-dashoffset: -50%;}
 }
 
+.about {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 0) {
     .banner__picture {
         height: calc(70vh - 75px);
     }
 
     .banner__title {
-        font-size: 3rem;
-        top: 65%;
-        overflow-wrap: break-word;
+        display: none;
+    }
+
+    .about {
+        position: absolute;
+        top: calc(70vh - 75px);
+    }
+
+    .about__title {
+        font-size: 1.7rem;
+        color: white;
+    }
+
+    .about__description {
+        font-size: 1rem;
+        color: lightgray;
     }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
     .banner__picture {
         height: calc(100vh - 137px);
     }
 
     .banner__title {
+        display: block;
         font-size: 5.0625rem;
         top: 85%;
     }
+
+    .about {
+        padding: 2.5rem;
+        position: relative;
+        top: auto;
+    }
+
+    .about__description {
+        font-size: 1.75rem;
+        color: #595959;
+    }
+
+    .about__title {
+        color: #0d0f45;
+        font-size: 3.1875rem;
+        font-weight: 100;
+    }
 }
-
-

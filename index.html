@@ -1,6 +1,6 @@
 <!--To do:
-        Change quemsomos to nft games
         Make a better footer style
+        Gradiente azul verificar 
 -->
 
 
@@ -20,13 +20,14 @@
         <link href="./assets/css/crypto-content.css" rel="stylesheet" />
         <link href="./assets/css/nft-content.css" rel="stylesheet" />
         <link href="./assets/css/footer.css" rel="stylesheet" />
+        <script src="./assets/js/showButton.js"></script>
     </head>
     <body>
         <!-- ads --><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div class="coin__banner" id="coinmarketcap-widget-marquee" coins="1,1027,1839,4687,3311,6783,19515,16197" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
         <header class="header">
             
             <div id="logo">
-                <a href="/index.html">            
+                <a href="/">            
                 <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
             </div>
 
@@ -70,32 +71,32 @@
             </section>
             <section class="mainPosts">
                 <div class="post">
-                    <div class="blur">
-                        <button class="post__button_h" onclick="window.open('https://coinmarketcap.com/currencies/bitcoin/','_blank')">
+                    <div class="blur" id="blur_01">
+                        <button class="post__button" id="post__button_01" onclick="window.open('https://coinmarketcap.com/currencies/bitcoin/','_blank')">
                             Do you know BTC?<br /><br />
                             Click here
                         </button>
                     </div>
                 </div>
                 <div class="post">
-                    <div class="blur">
-                        <button class="post__button_h" onclick="window.open('https://coinmarketcap.com/currencies/ethereum/','_blank')">
+                    <div class="blur" id="blur_02">
+                        <button class="post__button" id="post__button_02" onclick="window.open('https://coinmarketcap.com/currencies/ethereum/','_blank')">
                             Do you know ETH?<br /><br />
                             Click here
                         </button>
                     </div>
                 </div>
                 <div class="post">
-                    <div class="blur">
-                        <button class="post__button_h" onclick="window.open('https://coinmarketcap.com/currencies/bnb/','_blank')">
+                    <div class="blur" id="blur_03">
+                        <button class="post__button" id="post__button_03" onclick="window.open('https://coinmarketcap.com/currencies/bnb/','_blank')">
                             Do you know BNB?<br /><br />
                             Click here
                         </button>
                     </div>
                 </div>
                 <div class="post">
-                    <div class="blur">
-                        <button class="post__button_h" onclick="window.open('https://coinmarketcap.com/currencies/binance-usd/','_blank')">
+                    <div class="blur" id="blur_04">
+                        <button class="post__button" id="post__button_04" onclick="window.open('https://coinmarketcap.com/currencies/binance-usd/','_blank')">
                             Do you know BUSD?<br /><br />
                             Click here
                         </button>
@@ -103,23 +104,20 @@
                 </div>
             </section>
             <section class="mainGrid">
-                <h3 class="mainGrid__titulo">Quem somos</h3>
-                <p class="mainGrid__descricao">Conheça a comunidade por trás da iniciativa</p>
+                <h3 class="mainGrid__title">Or try NFT Games!</h3>
+                <p class="mainGrid__description">Discover the popular NFT games here</p>
                 <div class="grid">
-                    <div class="grid__single">
-                        <div class="nft__picture"></div>
-                        <span class="nft__title">Roberta</span>
-                        <span class="nft__description">Conteúdo</span>
+                    <div class="nft__picture">
+                        <button class="nft__button"  onclick="window.open('https://whitepaper.axieinfinity.com/','_blank')">See more</button>
                     </div>
-                    <div class="grid__single">
-                        <div class="nft__picture"></div>
-                        <span class="nft__title">Marcela</span>
-                        <span class="nft__description">Chef de cozinha</span>
+                    <div class="nft__picture">
+                        <button class="nft__button"  onclick="window.open('https://whitepaper.bombcrypto.io/','_blank')">See more</button>
                     </div>
-                    <div class="grid__single">
-                        <div class="nft__picture"></div>
-                        <span class="nft__title">Andréia</span>
-                        <span class="nft__description">Pequena Produtora</span>
+                    <div class="nft__picture">
+                        <button class="nft__button"  onclick="window.open('https://whitepaper.castlerunners.org/','_blank')">See more</button>
+                    </div>
+                    <div class="nft__picture">
+                        <button class="nft__button"  onclick="window.open('https://doc.lunarush.io/whitepaper','_blank')">See more</button>
                     </div>
                 </div>
             </section>
