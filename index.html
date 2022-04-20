@@ -1,9 +1,3 @@
-<!--To do:
-        Make a better footer style
-        Gradiente azul verificar 
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -25,11 +19,7 @@
     <body>
         <!-- ads --><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div class="coin__banner" id="coinmarketcap-widget-marquee" coins="1,1027,1839,4687,3311,6783,19515,16197" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
         <header class="header">
-            
-            <div id="logo">
-                <a href="/">            
-                <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
-            </div>
+            <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
 
             <!-- WEB Menu-->
             <nav class="menu">
@@ -65,9 +55,7 @@
             </section>
             <section class="about">
                 <h3 class="about__title">You don't know how to start?</h3>
-                <p class="about__description">
-                    Discover the most popular cryptocurrencies here
-                </p>
+                <p class="about__description">Discover the most popular cryptocurrencies here</p>
             </section>
             <section class="mainPosts">
                 <div class="post">
@@ -124,26 +112,17 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <ul class="footer__list">
-                    <li>
-                        <a class="footer__list_link" href="#">
-                            <img src="img/logos/01.svg" alt="Logo 01">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer__list_link" href="#">
-                            <img src="img/logos/02.svg" alt="Logo 02">
-                        </a>
-                    </li>
-                    <li>
-                        <a class="footer__list_link" href="#">
-                            <img src="img/logos/03.svg" alt="Logo 03">
-                        </a>
-                    </li>
-                </ul>
+                <img alt="NFT Future" class="footer__logo" src="./assets/img/logo-footer.png" />
+                <nav class="footer__menu">
+                    <ul class="footer__menu__list">
+                        <li class="footer__menu__item"><a class="footer__menu__link menu__link--active" href="#">Home</a></li>
+                        <li class="footer__menu__item"><a class="footer__menu__link" href="#">News</a></li>
+                        <li class="footer__menu__item"><a class="footer__menu__link" href="#">About</a></li>
+                    </ul>
+                </nav>
                 <form class="footer__form" action="#">
                     <fieldset>
-                        <legend class="footer__form_legend" for="contact_email">Contact us here</legend>
+                        <legend class="footer__form_legend" for="contact_email">Contact us</legend>
                         <div class="footer__form_fieldset"> 
                             <input class="footer__form_emailInput" type="email" name="contact_email" id="contact_email">
                             <button class="footer__form_submit" type="submit">Send</button>
@@ -151,9 +130,7 @@
                     </fieldset>
                 </form>
             </div>
-            <section class="footer__copyright">
-                <h3 class="footer__copyright--title">Developer by Davi Brinhosa ©2022 </h3>
-            </section>
+            <div class="footer__copyright">Developer by Davi Brinhosa ©2022 </div>
         </footer>
     </body>
 </html>
