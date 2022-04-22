@@ -1,4 +1,6 @@
 .banner {
+    font-family: 'Orbitron', 'icones';
+    font-size: 18px;
     position: relative;
 }
 
@@ -21,7 +23,7 @@
     width: 100%;
     display: block;
     font-size: 5.0625rem;
-    top: 85%;
+    top: 88%;
 }
 
 .text-copy {
@@ -63,6 +65,8 @@
 }
 
 .about {
+    font-family: 'Orbitron', 'icones';
+    font-size: 18px;
     text-align: center;
     text-transform: uppercase;
     padding: 2.5rem;

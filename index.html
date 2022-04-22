@@ -2,10 +2,12 @@
 <html lang="en">
     <head>
         <link rel="icon" href="./assets/img/favicon.png">
-        <link href="https://fonts.googleapis.com/css?family=Orbitron:100,300,400,500,700,900" rel="stylesheet" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:100,300,400,500,700,900"/>
         <title>NFT Future</title>
         <link href="./assets/css/normalize.css" rel="stylesheet" />
         <link href="./assets/css/reset.css" rel="stylesheet" />
@@ -14,12 +16,11 @@
         <link href="./assets/css/crypto-content.css" rel="stylesheet" />
         <link href="./assets/css/nft-content.css" rel="stylesheet" />
         <link href="./assets/css/footer.css" rel="stylesheet" />
-        <script src="./assets/js/showButton.js"></script>
     </head>
     <body>
         <!-- ads --><script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div class="coin__banner" id="coinmarketcap-widget-marquee" coins="1,1027,1839,4687,3311,6783,19515,16197" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
         <header class="header">
-            <img alt="NFT Future" class="logo" src="./assets/img/logo.png" />
+            <img alt="NFT Future" class="logo" src="./assets/img/logo-color01.png" />
 
             <!-- WEB Menu-->
             <nav class="menu">
@@ -28,16 +29,22 @@
                     <li class="menu__item"><a class="menu__link" href="#">News</a></li>
                     <li class="menu__item"><a class="menu__link" href="#">About Crypto & NFT</a></li>
                 </ul>
-                <input type="text" class="menu__search undefined__search" placeholder="Search">
+                <input type="text" class="menu__search" placeholder="Search">
             </nav>
 
             <!-- Mobile Menu -->
             <div class="menu__mobile">
-                <a class="menu__mobile___link" href="#">Menu</a>
+                <a class="menu__mobile___button" href="#">Menu</a>
             </div>
-
         </header>
-        <main class="container">
+        <nav class="side-menu">
+            <img alt="NFT Future" class="side-menu__logo" src="./assets/img/logo-color02.png" />
+            <a class="side-menu__link side-menu__link--home" href="#">Home</a>
+            <a class="side-menu__link side-menu__link--news" href="#">News</a>
+            <a class="side-menu__link side-menu__link--about" href="#">About Crypto & NFT</a>
+            <input type="text" class="side-menu__search" placeholder="Search">
+        </nav>
+        <body class="container">
             <section class="banner">
                 <div class="banner__picture"></div>
                 <svg class="banner__title">
@@ -109,10 +116,10 @@
                     </div>
                 </div>
             </section>
-        </main>
+        </body>
         <footer class="footer">
             <div class="container">
-                <img alt="NFT Future" class="footer__logo" src="./assets/img/logo-footer.png" />
+                <img alt="NFT Future" class="footer__logo" src="./assets/img/logo-color02.png" />
                 <nav class="footer__menu">
                     <ul class="footer__menu__list">
                         <li class="footer__menu__item"><a class="footer__menu__link menu__link--active" href="#">Home</a></li>
@@ -132,5 +139,7 @@
             </div>
             <div class="footer__copyright">Developer by Davi Brinhosa ©2022 </div>
         </footer>
+        <script src="./assets/js/showButton.js"></script>
+        <script src="./assets/js/sideMenu.js"></script>
     </body>
 </html>

@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
 .header {
+    font-family: 'Orbitron', 'icones';
+    font-size: 18px;
     align-items: center;
     background: #ffffff;
     display: flex;
@@ -26,9 +33,9 @@
 .menu__link {
     color: #0d0f45;
     margin-right: 1.25rem;
+    outline: none;
     text-decoration: none;
     text-transform: uppercase;
-    outline: none;
     padding: 6px 12px;
     line-height: 20px;
     min-width: 52px;
@@ -54,16 +61,38 @@
 }
 
 .menu__search {
+    align-self: center;
     border: solid black;
     border-radius: 1.25rem;
     font-size: .875rem;
     padding: .75rem .625rem;
-    height: 15px;
+    height: 18px;
     width: 150px;
 }
 
 .menu__mobile {
     display: none;
+}
+
+.side-menu {
+    font-family: 'Orbitron', 'icones';
+    font-size: 18px;
+    position: absolute;
+    left: -100vw;
+    transition: .25s;
+    z-index: 99
+}
+
+.side-menu--active {
+    left: 0;
+    transition: .25s;
+}
+
+.side-menu__link{
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 @media screen and (max-width: 1280px) {
@@ -84,7 +113,7 @@
         display: block;
     }
 
-    .menu__mobile___link {
+    .menu__mobile___button {
         color: #0d0f45;
         margin-right: 1.25rem;
         text-decoration: none;
@@ -99,4 +128,63 @@
         background-color: #b8d4c9;
     }
 
+    .side-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #0d0f45;
+        width: 80vw;
+        height: 100vh;
+    }
+
+    .side-menu__logo {
+        align-self: center;
+        padding: 2rem;
+        width: 75%;
+    }
+
+    .side-menu__link {
+        align-items: center;
+        color: darkgray;
+        font-size: 14px;
+        display: flex;
+        height: 64px;
+        padding-left: 64px;
+    }
+
+    .side-menu__link::before {
+        content: "";
+        font-size: 24px;
+        height: 24px;
+        left: 24px;
+        position: absolute;
+        width: 24px;
+    }
+    .side-menu__link--home {
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .side-menu__link--home::before {
+        content: "\e902";
+    }
+
+    .side-menu__link--news::before {
+        content: "\e906";
+    }
+
+    .side-menu__link--about::before {
+        content: "\e903";
+    }
+
+    .side-menu__search {
+        align-self: center;
+        border: solid black;
+        border-radius: 1.25rem;
+        font-size: .875rem;
+        height: 18px;
+        margin-top: 1rem;
+        padding: .75rem .625rem;
+        width: 75%;
+    }
 }

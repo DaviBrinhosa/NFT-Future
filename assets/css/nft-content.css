@@ -1,4 +1,6 @@
 .mainGrid {
+    font-family: 'Orbitron', 'icones';
+    font-size: 18px;
     margin: 4rem 0;
     text-align: center;
     text-transform: uppercase;
@@ -78,5 +80,15 @@
 
     .nft__picture:nth-child(4) {
         margin-bottom: 2rem;
+    }
+
+    .mainGrid__title {
+        font-size: 3rem;
+        padding: .6rem;
+    }
+    
+    .mainGrid__description {
+        font-size: 1.50rem;
+        padding: .6rem;
     }
 }
