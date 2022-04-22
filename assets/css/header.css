@@ -10,7 +10,7 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
-    height: calc(30vh - 141px);
+    height: calc(15vw - 141px);
     padding: 0 3rem;
 }
     
@@ -88,6 +88,10 @@
     transition: .25s;
 }
 
+.side-menu__logo{
+    display: none;
+}
+
 .side-menu__link{
     list-style: none;
     outline: none;
@@ -98,7 +102,7 @@
 @media screen and (max-width: 1280px) {
     .header {
         height: 75px;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
 
     .logo {
@@ -139,8 +143,9 @@
 
     .side-menu__logo {
         align-self: center;
+        display: block;
         padding: 2rem;
-        width: 75%;
+        max-width: 75%;
     }
 
     .side-menu__link {

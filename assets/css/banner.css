@@ -7,7 +7,7 @@
 .banner__picture {
     background: url('../img/banner.png') no-repeat center / cover;
     width: 100%;
-    height: calc(100vh - 137px);
+    height: calc(46vw - 137px);
 }
 
 .banner__title {
@@ -65,6 +65,7 @@
 }
 
 .about {
+    align-self: center;
     font-family: 'Orbitron', 'icones';
     font-size: 18px;
     text-align: center;
@@ -75,11 +76,13 @@
 }
 
 .about__description {
+    align-self: center;
     color: #595959;
     font-size: 1.75rem;
 }
 
 .about__title {
+    align-self: center;
     color: #0d0f45;
     font-size: 3.1875rem;
     font-weight: 100;
@@ -87,7 +90,7 @@
 
 @media screen and (max-width: 1280px) {
     .banner__picture {
-        height: calc(65vh - 75px);
+        height: calc(125vw - 75px);
     }
 
     .banner__title {
@@ -97,14 +100,14 @@
     .about {
         padding: 0;
         position: absolute;
-        top: calc(65vh - 75px);
+        top: calc(125vw - 75px);
         text-align: center;
     }
 
     .about__title {
         color: white;
         font-size: 1.7rem;
-        margin: 1rem 2rem 0 2rem;
+        margin: 1rem 1rem 0 1rem;
     }
 
     .about__description {
