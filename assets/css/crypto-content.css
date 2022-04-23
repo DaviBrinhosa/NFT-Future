@@ -68,6 +68,26 @@
     display: block;
 }
 
+.slideUp {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+    } 
+    100% {
+      opacity: 1;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+
 @media screen and (max-width: 1280px) {
     .mainPosts{
         background-color: #18172c;

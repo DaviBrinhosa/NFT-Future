@@ -67,7 +67,7 @@
             <section class="mainPosts">
                 <div class="post">
                     <div class="blur" id="blur_01">
-                        <button class="post__button" id="post__button_01" onclick="window.open('https://coinmarketcap.com/currencies/bitcoin/','_blank')">
+                        <button class="post__button slideUp" id="post__button_01" onclick="window.open('https://coinmarketcap.com/currencies/bitcoin/','_blank')">
                             Do you know BTC?<br /><br />
                             Click here
                         </button>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="post">
                     <div class="blur" id="blur_02">
-                        <button class="post__button" id="post__button_02" onclick="window.open('https://coinmarketcap.com/currencies/ethereum/','_blank')">
+                        <button class="post__button slideUp" id="post__button_02" onclick="window.open('https://coinmarketcap.com/currencies/ethereum/','_blank')">
                             Do you know ETH?<br /><br />
                             Click here
                         </button>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="post">
                     <div class="blur" id="blur_03">
-                        <button class="post__button" id="post__button_03" onclick="window.open('https://coinmarketcap.com/currencies/bnb/','_blank')">
+                        <button class="post__button slideUp" id="post__button_03" onclick="window.open('https://coinmarketcap.com/currencies/bnb/','_blank')">
                             Do you know BNB?<br /><br />
                             Click here
                         </button>
@@ -91,31 +91,47 @@
                 </div>
                 <div class="post">
                     <div class="blur" id="blur_04">
-                        <button class="post__button" id="post__button_04" onclick="window.open('https://coinmarketcap.com/currencies/binance-usd/','_blank')">
+                        <button class="post__button slideUp" id="post__button_04" onclick="window.open('https://coinmarketcap.com/currencies/binance-usd/','_blank')">
                             Do you know BUSD?<br /><br />
                             Click here
                         </button>
                     </div>
                 </div>
             </section>
-            <section class="mainGrid">
+            <main class="mainGrid">
                 <h3 class="mainGrid__title">Or try NFT Games!</h3>
                 <p class="mainGrid__description">Discover the popular NFT games here</p>
-                <div class="grid">
-                    <div class="nft__picture">
-                        <button class="nft__button"  onclick="window.open('https://whitepaper.axieinfinity.com/','_blank')">See more</button>
-                    </div>
-                    <div class="nft__picture">
-                        <button class="nft__button"  onclick="window.open('https://whitepaper.bombcrypto.io/','_blank')">See more</button>
-                    </div>
-                    <div class="nft__picture">
-                        <button class="nft__button"  onclick="window.open('https://whitepaper.castlerunners.org/','_blank')">See more</button>
-                    </div>
-                    <div class="nft__picture">
-                        <button class="nft__button"  onclick="window.open('https://doc.lunarush.io/whitepaper','_blank')">See more</button>
-                    </div>
-                </div>
-            </section>
+                <section class="grid__list">
+                    <article class="grid" onclick="window.open('https://whitepaper.axieinfinity.com/','_blank')">
+                        <img alt="Artigo NFT 01" class="nft__picture" src="./assets/img/nfts/axie-infinity.png" />
+                        <div class="grid__button">
+                            <p class="nft__title">Axie Infinity</p>
+                            <button class="nft__button nft__button--play">See more</button>
+                        </div>
+                    </article>    
+                    <article class="grid" onclick="window.open('https://whitepaper.bombcrypto.io/','_blank')">
+                        <img alt="Artigo NFT 02" class="nft__picture" src="./assets/img/nfts/bomb-crypto.png" />
+                        <div class="grid__button">
+                            <p class="nft__title">Bomb Crypto</p>
+                            <button class="nft__button nft__button--play">See more</button>
+                        </div>                  
+                    </article>    
+                    <article class="grid" onclick="window.open('https://whitepaper.castlerunners.org/','_blank')">
+                        <img alt="Artigo NFT 03" class="nft__picture" src="./assets/img/nfts/castle-runners.png" />
+                        <div class="grid__button">
+                            <p class="nft__title">Castle Runners</p>
+                            <button class="nft__button nft__button--play">See more</button>
+                        </div>
+                    </article>    
+                    <article class="grid" onclick="window.open('https://doc.lunarush.io/whitepaper','_blank')">
+                        <img alt="Artigo NFT 04" class="nft__picture" src="./assets/img/nfts/luna-rush.png" />
+                        <div class="grid__button">
+                            <p class="nft__title">Luna Rush</p>
+                            <button class="nft__button nft__button--play">See more</button>
+                        </div>
+                    </article>
+                </section>
+            </main>
         </body>
         <footer class="footer">
             <div class="container">

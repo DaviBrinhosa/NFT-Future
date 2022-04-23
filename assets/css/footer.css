@@ -61,7 +61,7 @@
 }
 
 .footer__form {
-	width: 25%;
+    max-width: 50%;
 }
 
 .footer__form_legend {
