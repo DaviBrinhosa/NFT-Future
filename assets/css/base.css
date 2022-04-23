@@ -1,0 +1,13 @@
+@import url(_normalize.css);
+
+@import url(_reset.css);
+
+@import url(_header.css);
+
+@import url(_banner.css);
+
+@import url(_crypto-content.css);
+
+@import url(_nft-content.css);
+
+@import url(_footer.css);
