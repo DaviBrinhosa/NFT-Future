@@ -1,7 +1,10 @@
-# NFT-Future
-Site Project - NFT Future
+Webpage about Cryptocurrency and NFT
+# About the project
 
-Skills used in this project:
-HTML
-CSS
-Javascript
+This is **NFT-Future**, it is a study project concerning cryptocurrencies and NFT games. You can see the website working at: [Website](https://nft-future.netlify.app)
+
+## Technologies Used
+
+- HTML
+- CSS
+- Javascript
